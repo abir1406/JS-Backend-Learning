@@ -1,0 +1,19 @@
+{
+  "name": "backend-learning",
+  "version": "1.0.0",
+  "description": "backend learning",
+  "keywords": [
+    "javascipt",
+    "backend"
+  ],
+  "license": "ISC",
+  "author": "Arkadeep Chowdhury",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
