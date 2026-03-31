@@ -5,9 +5,15 @@ import {ApiResponse} from "../utils/ApiResponse.js"
 import {asyncHandler} from "../utils/asyncHandler.js"
 
 const getVideoComments = asyncHandler(async (req, res) => {
-    //TODO: get all comments for a video
     const {videoId} = req.params
-    const {page = 1, limit = 10} = req.query
+    const {page = 1, limit = 10} = req.query;
+
+    const video = await Video.findById(videoId);
+     
+    if (!video){
+        throw new ApiError(404, "video not found")
+    }
+    
 
 })
 
